@@ -7,7 +7,7 @@ fetch(
   .then((res) => res.json())
   .then((data) => {
     let desc = `
-    <h1 class="card-author">Autore:${data.copyright}</h1>`;
+    <h1 class="card-author">${data.copyright}</h1>`;
 
     let img = `<a href="${data.hdurl}" target="_blank"><img class="iotd" src="${data.hdurl}" alt=""></img></a>
     <p class="imgdesc" >${data.explanation}</p>`;
